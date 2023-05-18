@@ -10,6 +10,7 @@
 </head>
 
 <body class="flex-column min-100-vh">
+  {{!-- navbar section --}}
   <nav class="navbar">
     <ul class="flex-row">
       <li class="li-inline nav-item"><a href="/">Home</a></li>
@@ -17,19 +18,23 @@
       <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
     </ul>
   </nav>
+  {{!-- header --}}
   <header class="hero">
     <h1 class="app-title"><a href="/dashboard">Your Dashboard</a></h1>
   </header>
 
+{{!-- body --}}
   <main class="col-auto">
     {{{body}}}
   </main>
 
+{{!-- footer section --}}
   <footer class="footer flex-row justify-center">
     <a href="/dashboard/new">➕ New Post</a>
   </footer>
 </body>
 
+{{!-- connection script --}}
 <script src="/js/logout.js"></script>
 
 </html>
