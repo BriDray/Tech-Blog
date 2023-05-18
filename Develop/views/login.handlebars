@@ -1,7 +1,9 @@
 <div class="card">
   <div class="card-header">
+    {{!-- title --}}
     <h2>Login</h2>
   </div>
+  {{!-- login in form --}}
   <form id="login-form" class="card-body">
     <div>
       <label for="username-input-login">Username</label>
@@ -11,9 +13,11 @@
       <label for="password-input-login" class="form-label">Password</label>
       <input type="password" id="password-input-login" />
     </div>
+    {{!-- submit button --}}
     <button type="submit" id="login-btn" class="btn">Login!</button>
     <a type="button" href="/signup">Sign up instead</a>
   </form>
 </div>
 
+{{!-- login script --}}
 <script src="/js/login.js"></script>
